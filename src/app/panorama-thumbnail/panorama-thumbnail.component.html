@@ -1,0 +1,9 @@
+<div
+  class="panorama-thumbnail"
+  [style.background-image]="'url(' + panorama.paths.left + ')'"
+>
+  <div class="caption">
+    <h2 class="title">{{ panorama.title }}</h2>
+    <p class="date">{{ panorama.date | date : "dd/MM/yyyy" }}</p>
+  </div>
+</div>
