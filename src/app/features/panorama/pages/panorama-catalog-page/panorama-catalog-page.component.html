@@ -1,0 +1,9 @@
+<div class="panorama-catalog">
+  @for (panorama of panoramaList; track panorama.id) {
+  <app-panorama-thumbnail
+    class="panorama-thumbnail"
+    (click)="navigateToPlayer(panorama.id)"
+    [panorama]="panorama"
+  />
+  }
+</div>
