@@ -22,14 +22,18 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
       container: this.el.nativeElement.querySelector('#viewer'),
       adapter: CubemapAdapter,
       panorama: {
-        left: this.panorama.paths.left,
-        front: this.panorama.paths.front,
-        right: this.panorama.paths.right,
-        back: this.panorama.paths.back,
-        top: this.panorama.paths.top,
-        bottom: this.panorama.paths.bottom,
+        type: 'separate',
+        paths: {
+          left: this.panorama.paths.left,
+          front: this.panorama.paths.front,
+          right: this.panorama.paths.right,
+          back: this.panorama.paths.back,
+          top: this.panorama.paths.top,
+          bottom: this.panorama.paths.bottom,
+        },
       },
       caption: this.panorama.title,
+      defaultZoomLvl: 25,
     });
   }
 

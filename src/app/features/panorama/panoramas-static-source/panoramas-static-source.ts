@@ -87,14 +87,14 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 8,
-    title: 'podwórko',
+    title: 'podworko',
     paths: {
-      left: './assets/panoramas/podwórko/pano_0.jpg',
-      front: './assets/panoramas/podwórko/pano_1.jpg',
-      right: './assets/panoramas/podwórko/pano_2.jpg',
-      back: './assets/panoramas/podwórko/pano_3.jpg',
-      top: './assets/panoramas/podwórko/pano_4.jpg',
-      bottom: './assets/panoramas/podwórko/pano_5.jpg',
+      left: './assets/panoramas/podworko/pano_0.jpg',
+      front: './assets/panoramas/podworko/pano_1.jpg',
+      right: './assets/panoramas/podworko/pano_2.jpg',
+      back: './assets/panoramas/podworko/pano_3.jpg',
+      top: './assets/panoramas/podworko/pano_4.jpg',
+      bottom: './assets/panoramas/podworko/pano_5.jpg',
     },
   },
   {
@@ -459,14 +459,14 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 39,
-    title: 'Chaber',
+    title: 'chaber',
     paths: {
-      left: './assets/panoramas/Chaber/pano_0.jpg',
-      front: './assets/panoramas/Chaber/pano_1.jpg',
-      right: './assets/panoramas/Chaber/pano_2.jpg',
-      back: './assets/panoramas/Chaber/pano_3.jpg',
-      top: './assets/panoramas/Chaber/pano_4.jpg',
-      bottom: './assets/panoramas/Chaber/pano_5.jpg',
+      left: './assets/panoramas/chaber/pano_0.jpg',
+      front: './assets/panoramas/chaber/pano_1.jpg',
+      right: './assets/panoramas/chaber/pano_2.jpg',
+      back: './assets/panoramas/chaber/pano_3.jpg',
+      top: './assets/panoramas/chaber/pano_4.jpg',
+      bottom: './assets/panoramas/chaber/pano_5.jpg',
     },
   },
 ];

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PanoramaThumbnailComponent } from '../../components/panorama-thumbnail/panorama-thumbnail.component';
 import { PanoramaItem } from '../../panoramas-static-source/models/panorama-item';
-import { panoramaStaticSource } from '../../panoramas-static-source/panoramas';
+import { panoramaStaticSource } from '../../panoramas-static-source/panoramas-static-source';
 
 @Component({
   selector: 'app-panorama-catalog',

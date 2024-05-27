@@ -1,6 +1,8 @@
 <div
   class="panorama-thumbnail"
-  [style.background-image]="'url(' + panorama.paths.left + ')'"
+  [style.background-image]="
+    'url(/assets/panoramas-thumbnails/' + panorama.title + '.jpg)'
+  "
 >
   <div class="caption">
     <h2 class="title">{{ panorama.title }}</h2>
