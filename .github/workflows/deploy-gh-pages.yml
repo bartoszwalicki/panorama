@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies and build Angular
         run: |
           npm ci
-          npm run build --base-href https://bartoszwalicki.github.io/panorama/
+          npm run build --base-href /panorama/
 
       - name: Upload your page as github pages artifact
         uses: actions/upload-pages-artifact@main
