@@ -32,7 +32,7 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
           bottom: this.panorama.paths.bottom,
         },
       },
-      caption: this.panorama.title,
+      caption: this.panorama.rawTitle,
       defaultZoomLvl: 25,
     });
   }

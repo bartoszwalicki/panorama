@@ -1,6 +1,7 @@
 export interface PanoramaItem {
   id: number;
-  title: string;
+  rawTitle: string;
+  caption: string;
   paths: {
     left: string;
     front: string;

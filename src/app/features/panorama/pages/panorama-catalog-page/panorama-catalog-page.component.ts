@@ -14,7 +14,11 @@ import { panoramaStaticSource } from '../../panoramas-static-source/panoramas-st
 export class PanoramaCatalogPageComponent {
   public panoramaList: Array<PanoramaItem> = panoramaStaticSource;
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) {
+    this.panoramaList = this.panoramaList.sort((a, b) =>
+      a.caption.localeCompare(b.caption)
+    );
+  }
 
   public navigateToPlayer(panoramaId: number): void {
     this.router.navigate(['panorama', panoramaId]);
