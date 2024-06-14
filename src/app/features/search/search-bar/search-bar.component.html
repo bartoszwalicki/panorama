@@ -1,0 +1,17 @@
+<div class="search-bar">
+  <input
+    type="text"
+    class="search-field"
+    placeholder="Szukaj"
+    [formControl]="searchControl"
+  />
+
+  <button
+    *ngIf="searchControl.value"
+    type="button"
+    class="clear-button"
+    (click)="clearButtonClickEvent()"
+  >
+    x
+  </button>
+</div>

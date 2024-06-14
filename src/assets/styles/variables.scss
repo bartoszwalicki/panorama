@@ -1,0 +1,23 @@
+$mainBackgroundColor: #1a1a1a;
+$mainBackgroundGradient: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.02) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.02) 50%,
+    rgba(255, 255, 255, 0.02) 75%,
+    transparent 75%,
+    transparent
+  ),
+  linear-gradient(
+    45deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.02) 25%,
+    rgba(255, 255, 255, 0.02) 50%,
+    transparent 50%,
+    transparent 75%,
+    rgba(255, 255, 255, 0.02) 75%,
+    rgba(255, 255, 255, 0.02)
+  );
+$mainBackgroundSize: 10px 10px;
+$mainBackgroundPosition: 0 0, 5px 5px;

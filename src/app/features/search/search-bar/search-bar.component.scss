@@ -1,0 +1,48 @@
+@import "../../../../assets/styles/variables";
+
+.search-bar {
+  $height: 2.5rem;
+  position: relative;
+  width: 100%;
+
+  .search-field {
+    width: 100%;
+    height: $height;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    background-color: $mainBackgroundColor;
+    background-image: $mainBackgroundGradient;
+    background-size: $mainBackgroundSize;
+    background-position: $mainBackgroundPosition;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  .clear-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: $height;
+    width: 3rem;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    background-color: $mainBackgroundColor;
+    background-image: $mainBackgroundGradient;
+    background-size: $mainBackgroundSize;
+    background-position: $mainBackgroundPosition;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

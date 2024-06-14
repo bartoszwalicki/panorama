@@ -1,3 +1,7 @@
+:host {
+  padding: 1rem;
+}
+
 .panorama-catalog {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -17,5 +21,11 @@
     align-items: center;
     font-size: 24px;
     border-radius: 5px;
+  }
+
+  .no-results {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 4rem;
+    grid-column: 1/-1;
   }
 }

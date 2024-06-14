@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  Signal,
+  WritableSignal,
+  computed,
+  signal,
+} from '@angular/core';
 import { Router } from '@angular/router';
+import { SearchBarComponent } from '../../../search/search-bar/search-bar.component';
 import { PanoramaThumbnailComponent } from '../../components/panorama-thumbnail/panorama-thumbnail.component';
 import { PanoramaItem } from '../../panoramas-static-source/models/panorama-item';
 import { panoramaStaticSource } from '../../panoramas-static-source/panoramas-static-source';
@@ -9,18 +16,40 @@ import { panoramaStaticSource } from '../../panoramas-static-source/panoramas-st
   standalone: true,
   templateUrl: './panorama-catalog-page.component.html',
   styleUrl: './panorama-catalog-page.component.scss',
-  imports: [PanoramaThumbnailComponent],
+  imports: [PanoramaThumbnailComponent, SearchBarComponent],
 })
 export class PanoramaCatalogPageComponent {
-  public panoramaList: Array<PanoramaItem> = panoramaStaticSource;
+  public panoramaList$$: Signal<Array<PanoramaItem>>;
+
+  private readonly sortedStaticPanoramaList: Array<PanoramaItem>;
+
+  private searchTerm$$: WritableSignal<string> = signal('');
 
   constructor(public router: Router) {
-    this.panoramaList = this.panoramaList.sort((a, b) =>
-      a.caption.localeCompare(b.caption)
-    );
+    this.sortedStaticPanoramaList = this.sortPanoramaList(panoramaStaticSource);
+    this.panoramaList$$ = this.initDynamicPanoramaList();
   }
 
   public navigateToPlayer(panoramaId: number): void {
     this.router.navigate(['panorama', panoramaId]);
+  }
+
+  public searchTermUpdated(term: string): void {
+    this.searchTerm$$.set(term);
+  }
+
+  private initDynamicPanoramaList() {
+    return computed(() => {
+      const filteredPanoramaList = this.sortedStaticPanoramaList.filter(
+        (pano) =>
+          pano.caption.toLowerCase().includes(this.searchTerm$$().toLowerCase())
+      );
+
+      return filteredPanoramaList;
+    });
+  }
+
+  private sortPanoramaList(list: Array<PanoramaItem>): Array<PanoramaItem> {
+    return list.sort((a, b) => a.caption.localeCompare(b.caption));
   }
 }
