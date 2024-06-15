@@ -1,4 +1,7 @@
-<app-search-bar (searchTerm)="searchTermUpdated($event)" />
+<app-search-bar
+  (searchTerm)="searchTermUpdated($event)"
+  [setSearchTerm]="searchTermFromSessionStorage"
+/>
 <div class="panorama-catalog">
   @for (panorama of panoramaList$$(); track panorama.id) {
   <app-panorama-thumbnail

@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PanoramaPlayerComponent } from '../../components/panorama-player/panorama-player.component';
@@ -14,12 +15,19 @@ import { PanoramaItem } from '../../panoramas-static-source/models/panorama-item
 export class PanoramaDisplayPageComponent {
   public panorama: PanoramaItem | null = null;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private location: Location
+  ) {
     const panoramaId: number = parseInt(
       this.activatedRoute.snapshot.paramMap.get('id') ?? '0',
       10
     );
 
     this.panorama = getPanoramaById(panoramaId);
+  }
+
+  public dashboardButtonClickEvent(): void {
+    this.location.back();
   }
 }

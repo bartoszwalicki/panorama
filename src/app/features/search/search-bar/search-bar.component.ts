@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, DestroyRef, inject, output } from '@angular/core';
+import { Component, DestroyRef, inject, input, output } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
@@ -13,6 +13,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs';
 })
 export class SearchBarComponent {
   public searchTerm = output<string>();
+  public setSearchTerm = input<string>();
 
   public searchControl!: FormControl;
 
@@ -30,6 +31,10 @@ export class SearchBarComponent {
       .subscribe((query) => {
         this.searchTerm.emit(query);
       });
+
+    if (this.setSearchTerm()) {
+      this.searchControl.setValue(this.setSearchTerm());
+    }
   }
 
   public clearButtonClickEvent(): void {

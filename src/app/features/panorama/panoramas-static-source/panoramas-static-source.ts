@@ -1,8 +1,10 @@
 import { PanoramaItem } from './models/panorama-item';
+import { PanoramaTypeEnum } from './models/panorama-type.enum';
 
 export const panoramaStaticSource: Array<PanoramaItem> = [
   {
     id: 1,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan2',
     caption: 'Maurycy - Piekary 2',
     paths: {
@@ -16,6 +18,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 2,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'panorama_Awawfagawa',
   //   caption: 'OW Chaber',
   //   paths: {
@@ -29,6 +32,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 3,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_9408_Panorama',
     caption: 'GDM Scena setup 1',
     paths: {
@@ -42,6 +46,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 4,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan3',
     caption: 'Maurycy - Piekary 3',
     paths: {
@@ -55,6 +60,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 5,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan4',
     caption: 'Maurycy - Piekary 4',
     paths: {
@@ -68,6 +74,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 6,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'gdm2011',
     caption: 'GDM 2011 Mateo Salka',
     paths: {
@@ -81,6 +88,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 7,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan3_afawfa',
     caption: 'OW Chaber - Blaszak',
     paths: {
@@ -94,6 +102,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 8,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'podworko',
     caption: 'Podwórko',
     paths: {
@@ -107,6 +116,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 9,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pano_lighti',
     caption: 'BS - katakumby',
     paths: {
@@ -120,6 +130,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 10,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'panorama1',
   //   caption: 'Pierwsza panorama',
   //   paths: {
@@ -133,6 +144,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 11,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_0173_Panorama',
     caption: 'Pokój poddasze',
     paths: {
@@ -146,6 +158,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 12,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'Panorama_korytarz_hi_res',
     caption: 'BS - korytarz',
     paths: {
@@ -159,6 +172,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 13,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan2_adaw',
     caption: 'OW Chaber - Blaszak (krzywo)',
     paths: {
@@ -172,6 +186,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 14,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitledadawafa',
     caption: 'GDM Scena setup 2',
     paths: {
@@ -185,6 +200,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 15,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pano14',
     caption: 'OW Chaber - Blaszak (no watermark)',
     paths: {
@@ -198,6 +214,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 16,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'mini_9408_Panorama',
   //   paths: {
   //     left: './assets/panoramas/mini_9408_Panorama/pano_0.jpg',
@@ -210,6 +227,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 17,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_9671_Panorama',
     caption: 'Podgaje 2011',
     paths: {
@@ -223,6 +241,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 18,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'leba1',
     caption: 'Łeba - plaza',
     paths: {
@@ -236,6 +255,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 19,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'podgaje2011',
   //   paths: {
   //     left: './assets/panoramas/podgaje2011/pano_0.jpg',
@@ -248,6 +268,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 20,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitled1',
     caption: 'Lębork 2010',
     paths: {
@@ -261,6 +282,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 21,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_9460_Panorama',
     caption: 'GDM 2021 - pusta salka',
     paths: {
@@ -274,6 +296,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 22,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pan1',
     caption: 'Maurycy - Piekary 1',
     paths: {
@@ -287,6 +310,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 23,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pokoj2',
     caption: 'Pokój Bartosz',
     paths: {
@@ -300,6 +324,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 24,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_9428_Panorama',
     caption: 'GDM 2011 - przed sceną',
     paths: {
@@ -313,6 +338,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 25,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pakm',
     caption: 'Poznań - Aleje Marcinkowskiego',
     paths: {
@@ -326,6 +352,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 26,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitled0',
     caption: 'GDM 2011 - setup 3',
     paths: {
@@ -339,6 +366,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 27,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'piast',
     caption: 'Złotów - Al. Piasta',
     paths: {
@@ -352,6 +380,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 28,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'panorama',
   //   paths: {
   //     left: './assets/panoramas/panorama/pano_0.jpg',
@@ -364,6 +393,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 29,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitledawdawdaw',
     caption: 'Poznań - Stary Rynek',
     paths: {
@@ -377,6 +407,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 30,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'rynekzlotow',
     caption: 'Złotów - Stary Rynek',
     paths: {
@@ -390,6 +421,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 31,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'pierwsza_panorama',
     caption: 'Pierwsza panorama',
     paths: {
@@ -403,6 +435,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 32,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitled',
     caption: 'GDM 2021 - salka',
     paths: {
@@ -416,6 +449,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 33,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'plac_zabaw_duze_braki_w_obrazie',
     caption: 'Plac zabaw',
     paths: {
@@ -429,6 +463,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 34,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'pan1_aw',
   //   paths: {
   //     left: './assets/panoramas/pan1_aw/pano_0.jpg',
@@ -441,6 +476,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 35,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'eryk',
     caption: 'Eryk - nocne kino',
     paths: {
@@ -454,6 +490,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   // {
   //   id: 36,
+  // type: PanoramaTypeEnum.cubeFaces,
   //   rawTitle: 'Panorama_Salon_wersja_light',
   //   caption: "BS - salon",
   //   paths: {
@@ -467,6 +504,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   // {
   //   id: 37,
+  //   type: PanoramaTypeEnum.equirectangular,
   //   title: 'untitled2a',
   //   paths: {
   //     left: './assets/panoramas/untitled2a/pano_0.jpg',
@@ -479,6 +517,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   // },
   {
     id: 38,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'wersja_hi',
     caption: 'BS - salon',
     paths: {
@@ -492,6 +531,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   },
   {
     id: 39,
+    type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'chaber',
     caption: 'OW Chaber',
     paths: {

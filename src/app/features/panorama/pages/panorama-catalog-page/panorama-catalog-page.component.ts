@@ -20,6 +20,7 @@ import { panoramaStaticSource } from '../../panoramas-static-source/panoramas-st
 })
 export class PanoramaCatalogPageComponent {
   public panoramaList$$: Signal<Array<PanoramaItem>>;
+  public searchTermFromSessionStorage: string;
 
   private readonly sortedStaticPanoramaList: Array<PanoramaItem>;
 
@@ -28,6 +29,8 @@ export class PanoramaCatalogPageComponent {
   constructor(public router: Router) {
     this.sortedStaticPanoramaList = this.sortPanoramaList(panoramaStaticSource);
     this.panoramaList$$ = this.initDynamicPanoramaList();
+    this.searchTermFromSessionStorage =
+      sessionStorage.getItem('searchTerm') ?? '';
   }
 
   public navigateToPlayer(panoramaId: number): void {
@@ -36,6 +39,7 @@ export class PanoramaCatalogPageComponent {
 
   public searchTermUpdated(term: string): void {
     this.searchTerm$$.set(term);
+    sessionStorage.setItem('searchTerm', term);
   }
 
   private initDynamicPanoramaList() {

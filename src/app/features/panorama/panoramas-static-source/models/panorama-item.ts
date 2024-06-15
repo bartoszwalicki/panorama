@@ -1,5 +1,8 @@
+import { PanoramaTypeEnum } from './panorama-type.enum';
+
 export interface PanoramaItem {
   id: number;
+  type: PanoramaTypeEnum;
   rawTitle: string;
   caption: string;
   paths: {
