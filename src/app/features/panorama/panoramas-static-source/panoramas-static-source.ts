@@ -544,8 +544,19 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
     type: PanoramaTypeEnum.equirectangular,
     rawTitle: 'polo_przed_zlomowaniem',
     caption: 'Polo przed złomowaniem',
+    date: new Date('2014-11-30 14:21:21'),
     paths: {
       panorama: './assets/panoramas/polo_przed_zlomowaniem/panorama.jpg',
+    },
+  },
+  {
+    id: 41,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'podworko_w_domu',
+    caption: 'Podwórko w domu (tył)',
+    date: new Date('2010-05-08 15:24:32'),
+    paths: {
+      panorama: './assets/panoramas/podworko_w_domu/panorama.jpg',
     },
   },
 ];

@@ -7,6 +7,7 @@ interface PanoramaBase {
   type: PanoramaTypeEnum;
   rawTitle: string;
   caption: string;
+  date?: Date;
 }
 
 interface EquirectangularPanorama extends PanoramaBase {
