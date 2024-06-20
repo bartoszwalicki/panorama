@@ -72,6 +72,11 @@ fs.readdir(SRC_DIR, (err, folders) => {
       const cubeFacePanoramaPath = path.join(folderPath, "pano_0.jpg");
       const equirectangularPanoramaPath = path.join(folderPath, "panorama.jpg");
 
+      if (fs.existsSync(outputThumbnail)) {
+        console.log("Existing. Skipping generating: ", folderName);
+        return;
+      }
+
       if (fs.existsSync(cubeFacePanoramaPath)) {
         generateCubeFaceThumbnail(
           cubeFacePanoramaPath,

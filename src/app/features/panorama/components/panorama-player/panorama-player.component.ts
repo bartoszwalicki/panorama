@@ -2,6 +2,7 @@ import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import { Viewer } from '@photo-sphere-viewer/core';
 import { CubemapAdapter } from '@photo-sphere-viewer/cubemap-adapter';
 import { PanoramaItem } from '../../panoramas-static-source/models/panorama-item';
+import { PanoramaTypeEnum } from '../../panoramas-static-source/models/panorama-type.enum';
 
 @Component({
   selector: 'app-panorama-player',
@@ -20,18 +21,7 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
   public ngOnInit(): void {
     this.viewer = new Viewer({
       container: this.el.nativeElement.querySelector('#viewer'),
-      adapter: CubemapAdapter,
-      panorama: {
-        type: 'separate',
-        paths: {
-          left: this.panorama.paths.left,
-          front: this.panorama.paths.front,
-          right: this.panorama.paths.right,
-          back: this.panorama.paths.back,
-          top: this.panorama.paths.top,
-          bottom: this.panorama.paths.bottom,
-        },
-      },
+      ...this.getPanoramaTypeConfig(this.panorama),
       caption: this.panorama.caption,
       defaultZoomLvl: 25,
     });
@@ -40,6 +30,31 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
   public ngOnDestroy(): void {
     if (this.viewer) {
       this.viewer.destroy();
+    }
+  }
+
+  private getPanoramaTypeConfig(panorama: PanoramaItem): any {
+    if (panorama.type === PanoramaTypeEnum.cubeFaces) {
+      return {
+        adapter: CubemapAdapter,
+        panorama: {
+          type: 'separate',
+          paths: {
+            left: panorama.paths.left,
+            front: panorama.paths.front,
+            right: panorama.paths.right,
+            back: panorama.paths.back,
+            top: panorama.paths.top,
+            bottom: panorama.paths.bottom,
+          },
+        },
+      };
+    }
+
+    if (panorama.type === PanoramaTypeEnum.equirectangular) {
+      return {
+        panorama: panorama.paths.panorama,
+      };
     }
   }
 }

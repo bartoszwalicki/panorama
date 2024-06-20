@@ -502,19 +502,15 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
   //     bottom: './assets/panoramas/Panorama_Salon_wersja_light/pano_5.jpg',
   //   },
   // },
-  // {
-  //   id: 37,
-  //   type: PanoramaTypeEnum.equirectangular,
-  //   title: 'untitled2a',
-  //   paths: {
-  //     left: './assets/panoramas/untitled2a/pano_0.jpg',
-  //     front: './assets/panoramas/untitled2a/pano_1.jpg',
-  //     right: './assets/panoramas/untitled2a/pano_2.jpg',
-  //     back: './assets/panoramas/untitled2a/pano_3.jpg',
-  //     top: './assets/panoramas/untitled2a/pano_4.jpg',
-  //     bottom: './assets/panoramas/untitled2a/pano_5.jpg',
-  //   },
-  // },
+  {
+    id: 37,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'untitled2a',
+    caption: 'Wyciaczka Liceum',
+    paths: {
+      panorama: './assets/panoramas/untitled2a/panorama.jpg',
+    },
+  },
   {
     id: 38,
     type: PanoramaTypeEnum.cubeFaces,
@@ -541,6 +537,15 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
       back: './assets/panoramas/chaber/pano_3.jpg',
       top: './assets/panoramas/chaber/pano_4.jpg',
       bottom: './assets/panoramas/chaber/pano_5.jpg',
+    },
+  },
+  {
+    id: 40,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'polo_przed_zlomowaniem',
+    caption: 'Polo przed złomowaniem',
+    paths: {
+      panorama: './assets/panoramas/polo_przed_zlomowaniem/panorama.jpg',
     },
   },
 ];
