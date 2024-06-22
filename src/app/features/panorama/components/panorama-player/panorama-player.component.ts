@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import { Viewer } from '@photo-sphere-viewer/core';
 import { CubemapAdapter } from '@photo-sphere-viewer/cubemap-adapter';
@@ -8,6 +9,7 @@ import { PanoramaTypeEnum } from '../../panoramas-static-source/models/panorama-
   selector: 'app-panorama-player',
   standalone: true,
   imports: [],
+  providers: [DatePipe],
   templateUrl: './panorama-player.component.html',
   styleUrl: './panorama-player.component.scss',
 })
@@ -16,13 +18,15 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
 
   private viewer?: Viewer;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private datePipe: DatePipe) {}
 
   public ngOnInit(): void {
     this.viewer = new Viewer({
       container: this.el.nativeElement.querySelector('#viewer'),
       ...this.getPanoramaTypeConfig(this.panorama),
-      caption: this.panorama.caption,
+      caption: `${this.panorama.caption} ${this.getPanoramaDate(
+        this.panorama.date
+      )}`,
       defaultZoomLvl: 25,
     });
   }
@@ -56,5 +60,13 @@ export class PanoramaPlayerComponent implements OnInit, OnDestroy {
         panorama: panorama.paths.panorama,
       };
     }
+  }
+
+  private getPanoramaDate(date: Date | undefined): string {
+    if (date) {
+      return this.datePipe.transform(date, 'yyyy-MM-dd HH:mm') ?? '';
+    }
+
+    return '';
   }
 }

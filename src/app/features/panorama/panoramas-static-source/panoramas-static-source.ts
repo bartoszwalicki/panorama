@@ -564,7 +564,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
     type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'panorama_zwirownia',
     caption: 'Żwirownia',
-    date: new Date('2010-05-08 15:24:32'),
+    date: new Date('2010-07-07 19:02:44'),
     paths: {
       left: './assets/panoramas/panorama_zwirownia/pano_0.jpg',
       front: './assets/panoramas/panorama_zwirownia/pano_1.jpg',
