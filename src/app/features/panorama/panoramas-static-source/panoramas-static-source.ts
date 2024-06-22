@@ -559,4 +559,19 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
       panorama: './assets/panoramas/podworko_w_domu/panorama.jpg',
     },
   },
+  {
+    id: 42,
+    type: PanoramaTypeEnum.cubeFaces,
+    rawTitle: 'panorama_zwirownia',
+    caption: 'Żwirownia',
+    date: new Date('2010-05-08 15:24:32'),
+    paths: {
+      left: './assets/panoramas/panorama_zwirownia/pano_0.jpg',
+      front: './assets/panoramas/panorama_zwirownia/pano_1.jpg',
+      right: './assets/panoramas/panorama_zwirownia/pano_2.jpg',
+      back: './assets/panoramas/panorama_zwirownia/pano_3.jpg',
+      top: './assets/panoramas/panorama_zwirownia/pano_4.jpg',
+      bottom: './assets/panoramas/panorama_zwirownia/pano_5.jpg',
+    },
+  },
 ];
