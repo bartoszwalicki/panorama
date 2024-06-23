@@ -15,7 +15,10 @@
 
   .caption {
     position: absolute;
+    display: flex;
     width: 100%;
+    min-height: 4rem;
+    align-items: center;
     bottom: 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);

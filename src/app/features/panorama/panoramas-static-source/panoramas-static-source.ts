@@ -574,4 +574,128 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
       bottom: './assets/panoramas/panorama_zwirownia/pano_5.jpg',
     },
   },
+  {
+    id: 43,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_dymy_ciemno',
+    caption: 'GDM 2012 Dymy Ciemno',
+    date: new Date('2012-07-05 22:25:09'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_dymy_ciemno/panorama.jpg',
+    },
+  },
+  {
+    id: 44,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_poczatek_dymow',
+    caption: 'GDM 2012 Początek Dymów',
+    date: new Date('2012-07-05 19:13:23'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_poczatek_dymow/panorama.jpg',
+    },
+  },
+  {
+    id: 45,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_proba_dymow',
+    caption: 'GDM 2012 Próba Dymów',
+    date: new Date('2012-07-06 15:17:27'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_proba_dymow/panorama.jpg',
+    },
+  },
+  {
+    id: 46,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_przed_scena_swiatla',
+    caption: 'GDM 2012 Przed Sceną Światła Nocą',
+    date: new Date('2012-07-06 22:37:05'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_przed_scena_swiatla/panorama.jpg',
+    },
+  },
+  {
+    id: 47,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_przed_scena_rozkladanie',
+    caption: 'GDM 2012 Przed Sceną Rozkładanie',
+    date: new Date('2012-07-05 11:14:55'),
+    paths: {
+      panorama:
+        './assets/panoramas/gdm_2012_przed_scena_rozkladanie/panorama.jpg',
+    },
+  },
+  {
+    id: 48,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_rozkladanie_sceny',
+    caption: 'GDM 2012 Rozkładanie sceny',
+    date: new Date('2012-07-04 17:48:53'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_rozkladanie_sceny/panorama.jpg',
+    },
+  },
+  {
+    id: 49,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_rozlozona_pusta_scena',
+    caption: 'GDM 2012 Rozłożona pusta scena',
+    date: new Date('2012-07-05 18:29:43'),
+    paths: {
+      panorama:
+        './assets/panoramas/gdm_2012_rozlozona_pusta_scena/panorama.jpg',
+    },
+  },
+  {
+    id: 50,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_scena_noca_ze_swiatlami',
+    caption: 'GDM 2012 Scena Nocą ze światłami',
+    date: new Date('2012-07-06 22:29:09'),
+    paths: {
+      panorama:
+        './assets/panoramas/gdm_2012_scena_noca_ze_swiatlami/panorama.jpg',
+    },
+  },
+  {
+    id: 51,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_scena_rozkladanie_ula_i_darek',
+    caption: 'GDM 2012 Scena Rozkładanie Ula i Darek',
+    date: new Date('2012-07-04 15:59:22'),
+    paths: {
+      panorama:
+        './assets/panoramas/gdm_2012_scena_rozkladanie_ula_i_darek/panorama.jpg',
+    },
+  },
+  {
+    id: 52,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_talita_kum',
+    caption: 'GDM 2012 Talita Kum',
+    date: new Date('2012-07-07 21:08:50'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_talita_kum/panorama.jpg',
+    },
+  },
+  {
+    id: 53,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_w_kosciele',
+    caption: 'GDM 2012 W Kościele',
+    date: new Date('2012-07-06 22:42:37'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_w_kosciele/panorama.jpg',
+    },
+  },
+  {
+    id: 54,
+    type: PanoramaTypeEnum.equirectangular,
+    rawTitle: 'gdm_2012_scena_rozkladanie',
+    caption: 'GDM 2012 Scena Rozkładanie',
+    date: new Date('2012-07-05 10:20:20'),
+    paths: {
+      panorama: './assets/panoramas/gdm_2012_scena_rozkladanie/panorama.jpg',
+    },
+  },
 ];
