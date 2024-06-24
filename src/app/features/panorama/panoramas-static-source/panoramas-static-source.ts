@@ -284,7 +284,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
     id: 21,
     type: PanoramaTypeEnum.cubeFaces,
     rawTitle: '_MG_9460_Panorama',
-    caption: 'GDM 2021 - pusta salka',
+    caption: 'GDM 2011 - pusta salka',
     paths: {
       left: './assets/panoramas/_MG_9460_Panorama/pano_0.jpg',
       front: './assets/panoramas/_MG_9460_Panorama/pano_1.jpg',
@@ -437,7 +437,7 @@ export const panoramaStaticSource: Array<PanoramaItem> = [
     id: 32,
     type: PanoramaTypeEnum.cubeFaces,
     rawTitle: 'untitled',
-    caption: 'GDM 2021 - salka',
+    caption: 'GDM 2011 - salka',
     paths: {
       left: './assets/panoramas/untitled/pano_0.jpg',
       front: './assets/panoramas/untitled/pano_1.jpg',
